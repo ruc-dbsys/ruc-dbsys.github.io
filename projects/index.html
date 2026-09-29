@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>开源项目 · 数据库系统实验室</title>
-  <meta name="description" content="中国人民大学数据库系统实验室开源项目：RUCBase 教学型数据库、WooKongDB 分布式数据库与 WookongDB-MP 多写云原生数据库。" />
+  <meta name="description" content="中国人民大学数据库系统实验室开源项目：RUCBase 教学型数据库、WooKongDB-D 分布式数据库、WookongDB-MP 多写云原生数据库与 WooKongDB 自组装智能数据库。" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet" />
@@ -39,18 +39,32 @@
     <header class="page-head">
       <div class="container">
         <div><div class="eyebrow">Projects &amp; Open Source</div><h1>开源项目</h1></div>
-        <p>从教学型数据库到分布式与云原生系统，<br />以开源代码连接数据库教学、研究与实践。</p>
+        <p>从教学型数据库到分布式、云原生与智能数据库，<br />以开源代码连接数据库教学、研究与实践。</p>
       </div>
     </header>
     <div class="container page-content">
       <div class="section-heading">
         <div class="section-title"><h2>我们的项目</h2><p>Explore our database systems</p></div>
-        <nav class="project-index" aria-label="项目目录"><a href="#rucbase">RUCBase</a><a href="#wookongdb">WooKongDB</a><a href="#wookongdb-mp">WookongDB-MP</a></nav>
+        <nav class="project-index" aria-label="项目目录"><a href="#wookongdb">WooKongDB</a><a href="#rucbase">RUCBase</a><a href="#wookongdb-d">WooKongDB-D</a><a href="#wookongdb-mp">WookongDB-MP</a></nav>
       </div>
       <div class="project-list">
+        <article class="project-row" id="wookongdb" aria-labelledby="wookongdb-title">
+          <div class="project-identity">
+            <span class="project-number">01 / INTELLIGENT SYSTEMS</span>
+            <div class="project-logo-link"><img class="project-logo" src="../assets/projects/wookongdb.png" alt="WooKongDB 官方 Logo" width="196" height="198" /></div>
+            <h3 id="wookongdb-title">WooKongDB</h3><p>自组装智能数据库系统</p>
+            <span class="project-caption">Self-assembling. Self-optimizing. AI-native.</span>
+          </div>
+          <div class="project-detail">
+            <div class="project-tags"><span>自组装</span><span>自优化</span><span>AI 支持</span></div>
+            <p>WooKongDB 是面向智能化数据管理的自组装数据库系统，围绕复杂数据、动态负载与多样化 AI 应用需求，探索数据库系统的自动构建、智能执行与持续优化能力。系统具备 AI 支持能力，能够结合数据特征、负载模式与运行状态，动态组织数据处理、模型调用与执行流程。</p>
+            <p>该项目重点研究自组装执行框架、AI 辅助查询与分析、负载感知优化和自适应资源管理等关键技术，目标是降低数据库系统的人工调优成本，提升其在动态环境下的自动适应能力和智能化服务能力。</p>
+            <div class="project-actions"><span class="project-coming-soon">Coming soon</span></div>
+          </div>
+        </article>
         <article class="project-row" id="rucbase" aria-labelledby="rucbase-title">
           <div class="project-identity">
-            <span class="project-number">01 / EDUCATION</span>
+            <span class="project-number">02 / EDUCATION</span>
             <a class="project-logo-link" href="https://github.com/ruc-dbsys/rucbase-lab" target="_blank" rel="noopener noreferrer" aria-label="访问 RUCBase GitHub 仓库（新窗口）"><img class="project-logo project-logo-rucbase" src="../assets/projects/rucbase.png" alt="RUCBase 官方 Logo" width="1185" height="282" /></a>
             <h3 id="rucbase-title">RUCBase</h3><p>教学型关系数据库</p>
             <span class="project-caption">Learn by building.</span>
@@ -66,27 +80,26 @@
             </div>
           </div>
         </article>
-        <article class="project-row" id="wookongdb" aria-labelledby="wookongdb-title">
+        <article class="project-row" id="wookongdb-d" aria-labelledby="wookongdb-d-title">
           <div class="project-identity">
-            <span class="project-number">02 / DISTRIBUTED SYSTEMS</span>
-            <a class="project-logo-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB GitHub 仓库（新窗口）"><img class="project-logo project-logo-wookongdb" src="../assets/projects/wookongdb.png" alt="WooKongDB 官方 Logo" width="196" height="198" /></a>
-            <h3 id="wookongdb-title">WooKongDB</h3><p>分布式数据库研究原型</p>
-            <span class="project-caption">Consistency. Availability. Performance.</span>
+            <span class="project-number">03 / DISTRIBUTED SYSTEMS</span>
+            <a class="project-logo-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB-D GitHub 仓库（新窗口）"><img class="project-logo project-logo-wookongdb" src="../assets/projects/wookongdb.png" alt="WooKongDB 官方 Logo" width="196" height="198" /></a>
+            <h3 id="wookongdb-d-title">WooKongDB-D</h3><p>分布式数据库系统</p>
+            <span class="project-caption">Consistency. Availability. Distributed.</span>
           </div>
           <div class="project-detail">
-            <div class="project-tags"><span>强一致性</span><span>高可用</span><span>并行执行</span></div>
-            <p>WooKongDB 是面向强一致性、高可用与高性能的数据库原型系统，基于 PostgreSQL 与 Greenplum 的代码基础，探索分布式事务处理、集群故障恢复与可扩展执行。</p>
-            <p>项目保留成熟的集群架构，并围绕存储、执行与运行管理持续开展系统级研究，为分布式数据库关键技术的实现与验证提供基础。</p>
+            <div class="project-tags"><span>强一致性</span><span>高可用</span><span>分布式事务</span></div>
+            <p>WooKongDB-D 是一个面向强一致性、高可用与高性能的分布式数据库系统，具备分布式事务处理、集群故障恢复、并行查询执行和可扩展存储管理等能力。系统采用成熟的分布式数据库架构，并在存储、执行、事务与运行管理等核心模块上持续扩展，为分布式数据库关键技术的实现、验证与性能评估提供基础平台。</p>
             <div class="project-actions">
-              <a class="button-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB GitHub 仓库（新窗口）">GitHub 仓库 ↗</a>
+              <a class="button-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB-D GitHub 仓库（新窗口）">GitHub 仓库 ↗</a>
               <a class="project-stars" href="https://github.com/dbiir/WooKongDB/stargazers" target="_blank" rel="noopener noreferrer" data-github-repo="dbiir/WooKongDB" title="查看 GitHub Star 数（新窗口）"><span aria-hidden="true">☆</span> Stars <span class="star-count" aria-live="polite">查看</span></a>
-              <a class="more-link" href="https://github.com/dbiir/WooKongDB#readme" target="_blank" rel="noopener noreferrer" aria-label="阅读 WooKongDB 项目文档（新窗口）">项目文档 ↗</a>
+              <a class="more-link" href="https://github.com/dbiir/WooKongDB#readme" target="_blank" rel="noopener noreferrer" aria-label="阅读 WooKongDB-D 项目文档（新窗口）">项目文档 ↗</a>
             </div>
           </div>
         </article>
         <article class="project-row" id="wookongdb-mp" aria-labelledby="wookongdb-mp-title">
           <div class="project-identity">
-            <span class="project-number">03 / CLOUD-NATIVE SYSTEMS</span>
+            <span class="project-number">04 / CLOUD-NATIVE SYSTEMS</span>
             <a class="project-logo-link" href="https://github.com/ruc-dbsys/WookongDB-MP" target="_blank" rel="noopener noreferrer" aria-label="访问 WookongDB-MP GitHub 仓库（新窗口）"><img class="project-logo project-logo-wookongdb-mp" src="../assets/projects/wookongdb-mp.png" alt="WookongDB-MP 官方 Logo" width="812" height="690" /></a>
             <h3 id="wookongdb-mp-title">WookongDB-MP</h3><p>共享存储多写云原生数据库</p>
             <span class="project-caption">Multi-primary. Shared storage.</span>
