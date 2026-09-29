@@ -1393,3 +1393,48 @@ body[data-page="join"] .nav-join::after {
   }
 
 }
+
+/* Open-source project directory */
+body[data-page="projects"] .nav-projects { color: var(--ruc); }
+body[data-page="projects"] .nav-projects::after { background: var(--ruc); }
+.project-index { display: flex; flex-wrap: wrap; gap: 10px 22px; }
+.project-index a { font-size: 14px; text-decoration: none; font-weight: 600; }
+.project-index a:hover { text-decoration: underline; }
+.project-list { border-top: 2px solid var(--ink); }
+.project-row {
+  display: grid;
+  grid-template-columns: minmax(0, 0.8fr) minmax(0, 1.6fr);
+  gap: 64px;
+  padding-block: 44px;
+  border-bottom: 1px solid var(--line);
+  scroll-margin-top: 112px;
+}
+.project-identity { border-left: 3px solid var(--ruc); padding-left: 24px; }
+.project-row:nth-child(2) .project-identity { border-color: var(--teal); }
+.project-row:nth-child(3) .project-identity { border-color: var(--gold); }
+.project-number { display: block; margin-bottom: 24px; color: var(--muted); font-size: 11px; font-weight: 700; }
+.project-logo-link { display: flex; width: 100%; height: 142px; align-items: center; margin-bottom: 20px; }
+.project-logo { width: auto; height: auto; max-width: 100%; max-height: 142px; object-fit: contain; }
+.project-logo-rucbase { width: 300px; }
+.project-logo-link:focus-visible { outline: 2px solid var(--ruc); outline-offset: 5px; }
+.project-identity h3 { font-family: "Source Serif 4", Georgia, serif; font-size: clamp(26px, 2.7vw, 34px); overflow-wrap: anywhere; }
+.project-identity p { margin: 10px 0 18px; color: var(--ink-soft); font-size: 15px; }
+.project-caption { display: block; color: var(--muted); font-family: "Source Serif 4", Georgia, serif; font-size: 14px; }
+.project-detail { min-width: 0; }
+.project-detail p { margin: 0 0 14px; color: var(--ink-soft); line-height: 1.9; }
+.project-tags { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 20px; }
+.project-tags span { padding: 3px 10px; background: var(--soft); color: var(--ink-soft); font-size: 12px; }
+.project-actions { display: flex; flex-wrap: wrap; align-items: center; gap: 24px; margin-top: 24px; }
+.projects-note { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; margin-top: 36px; padding: 24px; background: var(--soft-warm); }
+.projects-note p { margin: 0; color: var(--ink-soft); }
+.project-index a:focus-visible, .project-actions a:focus-visible { outline: 2px solid var(--ruc); outline-offset: 5px; }
+@media (max-width: 860px) {
+  .project-row { gap: 32px; grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr); }
+}
+@media (max-width: 620px) {
+  .project-row { grid-template-columns: 1fr; gap: 24px; padding-block: 32px; }
+  .project-number { margin-bottom: 14px; }
+  .project-identity { padding-left: 18px; }
+  .project-identity p { margin-bottom: 8px; }
+  .project-detail p { font-size: 15px; }
+}

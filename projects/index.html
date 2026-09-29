@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>开源项目 · 数据库系统实验室</title>
+  <meta name="description" content="中国人民大学数据库系统实验室开源项目：RUCBase 教学型数据库、WooKongDB 分布式数据库与 WookongDB-MP 多写云原生数据库。" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;500;600;700&family=Noto+Serif+SC:wght@600;700&family=Source+Sans+3:wght@400;600;700&family=Source+Serif+4:wght@500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../assets/css/site.css" />
+  <script src="../assets/js/site.js" defer></script>
+</head>
+<body data-page="projects">
+  <a class="skip-link" href="#main">跳至主要内容</a>
+  <div class="utility-bar">
+    <div class="container utility-inner">
+      <span>中国人民大学 · 信息学院 · 数据工程与知识工程教育部重点实验室</span>
+      <div class="utility-links"><a href="https://info.ruc.edu.cn/" target="_blank" rel="noopener">信息学院</a></div>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="../" aria-label="数据库系统实验室首页">
+        <span class="brand-mark" aria-hidden="true">DB</span>
+        <span><span class="brand-cn">数据库系统实验室</span><span class="brand-en">Database Systems Lab · DEKE</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="main-nav" aria-label="打开导航菜单"><span></span><span></span><span></span></button>
+      <nav class="main-nav" id="main-nav" aria-label="主导航">
+        <ul>
+          <li><a class="nav-home" href="../">首页</a></li><li><a class="nav-people" href="../people/">科研团队</a></li><li><a class="nav-news" href="../news/">新闻</a></li><li><a class="nav-publications" href="../publications/">学术论文</a></li><li><a class="nav-projects" href="./">开源项目</a></li><li><a class="nav-teaching" href="../teaching/">教学</a></li><li><a class="nav-join" href="../join/">加入我们</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <header class="page-head">
+      <div class="container">
+        <div><div class="eyebrow">Projects &amp; Open Source</div><h1>开源项目</h1></div>
+        <p>从教学型数据库到分布式与云原生系统，<br />以开源代码连接数据库教学、研究与实践。</p>
+      </div>
+    </header>
+    <div class="container page-content">
+      <div class="section-heading">
+        <div class="section-title"><h2>我们的项目</h2><p>Explore our database systems</p></div>
+        <nav class="project-index" aria-label="项目目录"><a href="#rucbase">RUCBase</a><a href="#wookongdb">WooKongDB</a><a href="#wookongdb-mp">WookongDB-MP</a></nav>
+      </div>
+      <div class="project-list">
+        <article class="project-row" id="rucbase" aria-labelledby="rucbase-title">
+          <div class="project-identity">
+            <span class="project-number">01 / EDUCATION</span>
+            <a class="project-logo-link" href="https://github.com/ruc-dbsys/rucbase-lab" target="_blank" rel="noopener noreferrer" aria-label="访问 RUCBase GitHub 仓库（新窗口）"><img class="project-logo project-logo-rucbase" src="../assets/projects/rucbase.png" alt="RUCBase 官方 Logo" width="1185" height="282" /></a>
+            <h3 id="rucbase-title">RUCBase</h3><p>教学型关系数据库</p>
+            <span class="project-caption">Learn by building.</span>
+          </div>
+          <div class="project-detail">
+            <div class="project-tags"><span>数据库教学</span><span>关系数据库</span><span>内核实现</span></div>
+            <p>RUCBase 是由中国人民大学数据库教学团队开发的教学型关系数据库管理系统，配套教育部“101 计划”计算机核心教材《数据库管理系统原理与实现》，为数据库系统课程提供实验平台。</p>
+            <p>围绕存储管理、B+ 树索引、查询执行与并发控制开展循序渐进的实践，帮助学生从理解数据库原理走向亲手实现数据库内核。</p>
+            <div class="project-actions">
+              <a class="button-link" href="https://github.com/ruc-dbsys/rucbase-lab" target="_blank" rel="noopener noreferrer" aria-label="访问 RUCBase GitHub 仓库（新窗口）">GitHub 仓库 ↗</a>
+              <a class="more-link" href="https://github.com/ruc-dbsys/rucbase-lab#readme" target="_blank" rel="noopener noreferrer" aria-label="阅读 RUCBase 项目文档（新窗口）">项目文档 ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" id="wookongdb" aria-labelledby="wookongdb-title">
+          <div class="project-identity">
+            <span class="project-number">02 / DISTRIBUTED SYSTEMS</span>
+            <a class="project-logo-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB GitHub 仓库（新窗口）"><img class="project-logo project-logo-wookongdb" src="../assets/projects/wookongdb.png" alt="WooKongDB 官方 Logo" width="196" height="198" /></a>
+            <h3 id="wookongdb-title">WooKongDB</h3><p>分布式数据库研究原型</p>
+            <span class="project-caption">Consistency. Availability. Performance.</span>
+          </div>
+          <div class="project-detail">
+            <div class="project-tags"><span>强一致性</span><span>高可用</span><span>并行执行</span></div>
+            <p>WooKongDB 是面向强一致性、高可用与高性能的数据库原型系统，基于 PostgreSQL 与 Greenplum 的代码基础，探索分布式事务处理、集群故障恢复与可扩展执行。</p>
+            <p>项目保留成熟的集群架构，并围绕存储、执行与运行管理持续开展系统级研究，为分布式数据库关键技术的实现与验证提供基础。</p>
+            <div class="project-actions">
+              <a class="button-link" href="https://github.com/dbiir/WooKongDB" target="_blank" rel="noopener noreferrer" aria-label="访问 WooKongDB GitHub 仓库（新窗口）">GitHub 仓库 ↗</a>
+              <a class="more-link" href="https://github.com/dbiir/WooKongDB#readme" target="_blank" rel="noopener noreferrer" aria-label="阅读 WooKongDB 项目文档（新窗口）">项目文档 ↗</a>
+            </div>
+          </div>
+        </article>
+        <article class="project-row" id="wookongdb-mp" aria-labelledby="wookongdb-mp-title">
+          <div class="project-identity">
+            <span class="project-number">03 / CLOUD-NATIVE SYSTEMS</span>
+            <a class="project-logo-link" href="https://github.com/ruc-dbsys/WookongDB-MP" target="_blank" rel="noopener noreferrer" aria-label="访问 WookongDB-MP GitHub 仓库（新窗口）"><img class="project-logo project-logo-wookongdb-mp" src="../assets/projects/wookongdb-mp.png" alt="WookongDB-MP 官方 Logo" width="812" height="690" /></a>
+            <h3 id="wookongdb-mp-title">WookongDB-MP</h3><p>共享存储多写云原生数据库</p>
+            <span class="project-caption">Multi-primary. Shared storage.</span>
+          </div>
+          <div class="project-detail">
+            <div class="project-tags"><span>存算分离</span><span>多写架构</span><span>共享存储</span></div>
+            <p>WookongDB-MP 是由中国人民大学数据库系统研究组研发的多写云原生数据库系统。采用存储与计算分离的共享存储架构，集群中的写节点均可访问数据页面并执行读写事务。</p>
+            <p>项目提供基础 SQL 交互和标准负载测试，支持 SmallBank、YCSB 与 TPC-C，以及 Eager、Lazy 页面获取与释放策略，为多写数据库的系统研究提供实验平台。</p>
+            <div class="project-actions">
+              <a class="button-link" href="https://github.com/ruc-dbsys/WookongDB-MP" target="_blank" rel="noopener noreferrer" aria-label="访问 WookongDB-MP GitHub 仓库（新窗口）">GitHub 仓库 ↗</a>
+              <a class="more-link" href="https://github.com/ruc-dbsys/WookongDB-MP#readme" target="_blank" rel="noopener noreferrer" aria-label="阅读 WookongDB-MP 项目文档（新窗口）">项目文档 ↗</a>
+            </div>
+          </div>
+        </article>
+      </div>
+      <div class="projects-note"><p>欢迎使用我们的开源项目，参与交流与贡献。</p><a class="more-link" href="https://github.com/ruc-dbsys" target="_blank" rel="noopener noreferrer">访问实验室 GitHub ↗</a></div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <div><div class="footer-brand">数据库系统实验室 · DBLab</div><div class="footer-meta">© 1978–2026 · DEKE Lab · Renmin University of China</div></div>
+      <div class="footer-links"><a href="https://info.ruc.edu.cn/" target="_blank" rel="noopener">信息学院</a><a href="https://feishu.cn/docx/BmcJdJiAhoz63WxGAnDcich2njg" target="_blank" rel="noopener">团队发展史</a></div>
+    </div>
+  </footer>
+</body>
+</html>
