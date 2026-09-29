@@ -1438,3 +1438,20 @@ body[data-page="projects"] .nav-projects::after { background: var(--ruc); }
   .project-identity p { margin-bottom: 8px; }
   .project-detail p { font-size: 15px; }
 }
+
+.project-stars {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  min-height: 42px;
+  padding: 7px 12px;
+  border: 1px solid var(--line);
+  border-radius: 3px;
+  color: var(--ink-soft);
+  font-size: 14px;
+  text-decoration: none;
+}
+.project-stars:hover { border-color: var(--ruc); color: var(--ruc); }
+.project-stars:focus-visible { outline: 2px solid var(--ruc); outline-offset: 4px; }
+.project-stars > span:first-child { color: var(--gold); font-size: 20px; line-height: 1; }
+.star-count { padding-left: 8px; border-left: 1px solid var(--line); font-weight: 700; font-variant-numeric: tabular-nums; }
