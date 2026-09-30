@@ -659,6 +659,12 @@ body[data-page="join"] .nav-join::after {
   object-position: 59% center;
 }
 
+.faculty-photo.photo-zhao,
+.profile-photo.photo-zhao {
+  object-fit: contain;
+  background: #fff;
+}
+
 .faculty-fallback {
   display: grid;
   border: 1px solid var(--line);
