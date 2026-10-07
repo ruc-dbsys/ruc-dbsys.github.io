@@ -916,6 +916,90 @@ body[data-page="join"] .nav-join::after {
   font-weight: 700;
 }
 
+.records-summary {
+  margin: 20px 0 12px;
+  color: var(--muted);
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.records-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.student-record,
+.alumni-record {
+  min-width: 0;
+  padding: 15px 16px;
+  border: 1px solid var(--line);
+  background: var(--paper);
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.student-record:hover,
+.alumni-record:hover {
+  border-color: #c4a0a5;
+  background: #fffafa;
+}
+
+.record-name {
+  color: var(--ink);
+  font-family: "Noto Serif SC", serif;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.record-meta {
+  margin-top: 3px;
+  color: var(--ruc);
+  font-size: 11px;
+  font-weight: 700;
+}
+
+.record-line,
+.record-topic,
+.record-email,
+.record-destination {
+  margin-top: 9px;
+  overflow-wrap: anywhere;
+}
+
+.record-line,
+.record-destination {
+  color: var(--ink-soft);
+}
+
+.record-line span,
+.record-destination span {
+  margin-right: 5px;
+  color: var(--muted);
+}
+
+.record-topic {
+  min-height: 38px;
+  color: var(--ink-soft);
+}
+
+.record-email {
+  color: var(--muted);
+  font-size: 11px;
+}
+
+.record-email a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.alumni-section .subsection-head p {
+  max-width: 420px;
+  margin: 0;
+  color: var(--muted);
+  font-size: 13px;
+}
+
 .news-toolbar {
   display: flex;
   margin-bottom: 28px;
@@ -1256,6 +1340,10 @@ body[data-page="join"] .nav-join::after {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .records-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
   .lab-feature {
     grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr);
     gap: 42px;
@@ -1381,6 +1469,10 @@ body[data-page="join"] .nav-join::after {
     grid-template-columns: 1fr;
   }
 
+  .records-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
 }
 
 @media (max-width: 620px) {
@@ -1398,6 +1490,19 @@ body[data-page="join"] .nav-join::after {
 
   .container {
     width: min(calc(100% - 32px), var(--max));
+  }
+
+  .records-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .student-record,
+  .alumni-record {
+    padding: 14px;
+  }
+
+  .alumni-section .subsection-head p {
+    display: none;
   }
 
   .utility-inner {
