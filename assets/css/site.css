@@ -245,6 +245,7 @@ blockquote:last-child {
 .main-nav a:hover,
 body[data-page="home"] .nav-home,
 body[data-page="people"] .nav-people,
+body[data-page="labs"] .nav-labs,
 body[data-page="news"] .nav-news,
 body[data-page="publications"] .nav-publications,
 body[data-page="teaching"] .nav-teaching,
@@ -254,6 +255,7 @@ body[data-page="join"] .nav-join {
 
 body[data-page="home"] .nav-home::after,
 body[data-page="people"] .nav-people::after,
+body[data-page="labs"] .nav-labs::after,
 body[data-page="news"] .nav-news::after,
 body[data-page="publications"] .nav-publications::after,
 body[data-page="teaching"] .nav-teaching::after,
@@ -657,6 +659,111 @@ body[data-page="join"] .nav-join::after {
 
 .faculty-photo.photo-du {
   object-position: 59% center;
+}
+
+.labs-head p {
+  max-width: 680px;
+  margin: 18px 0 0;
+  color: var(--ink-soft);
+  font-size: 17px;
+}
+
+.labs-content {
+  padding-block: 0 96px;
+}
+
+.labs-index {
+  display: grid;
+  margin-bottom: 0;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.labs-index a {
+  display: flex;
+  min-height: 82px;
+  padding: 18px 24px;
+  align-items: center;
+  border-left: 1px solid var(--line);
+  color: var(--ink);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.labs-index a:hover {
+  background: var(--soft-warm);
+  color: var(--ruc);
+}
+
+.labs-index span {
+  margin-right: 14px;
+  color: var(--ruc);
+  font-family: "Source Serif 4", Georgia, serif;
+  font-size: 13px;
+}
+
+.lab-feature {
+  display: grid;
+  padding-block: 88px;
+  border-bottom: 1px solid var(--line);
+  grid-template-columns: minmax(0, .9fr) minmax(420px, 1.1fr);
+  align-items: center;
+  gap: 70px;
+  scroll-margin-top: 96px;
+}
+
+.lab-feature-reverse .lab-copy {
+  grid-column: 2;
+}
+
+.lab-feature-reverse .lab-visual {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.lab-kicker {
+  margin-bottom: 14px;
+  color: var(--ruc);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: .06em;
+}
+
+.lab-copy h2 {
+  margin-bottom: 28px;
+  font-size: clamp(27px, 2.6vw, 38px);
+  line-height: 1.35;
+}
+
+.lab-copy p {
+  margin-bottom: 16px;
+  color: var(--ink-soft);
+  font-size: 15px;
+  line-height: 1.9;
+}
+
+.lab-visual {
+  margin: 0;
+  background: var(--soft);
+}
+
+.lab-visual img {
+  width: 100%;
+  aspect-ratio: 1.75 / 1;
+  object-fit: cover;
+}
+
+.lab-visual-wide img {
+  aspect-ratio: 2.5 / 1;
+}
+
+.lab-visual figcaption {
+  padding: 12px 16px;
+  border: 1px solid var(--line);
+  border-top: 0;
+  color: var(--muted);
+  font-size: 12px;
 }
 
 .faculty-photo.photo-zhao,
@@ -1148,6 +1255,11 @@ body[data-page="join"] .nav-join::after {
   .students-grid {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .lab-feature {
+    grid-template-columns: minmax(0, 1fr) minmax(360px, 1fr);
+    gap: 42px;
+  }
 }
 
 @media (max-width: 860px) {
@@ -1223,6 +1335,31 @@ body[data-page="join"] .nav-join::after {
     padding: 28px 0 0;
     border-top: 1px solid #c9c5be;
     border-left: 0;
+  }
+
+  .labs-index {
+    grid-template-columns: 1fr;
+  }
+
+  .labs-index a {
+    min-height: 62px;
+    border-top: 1px solid var(--line);
+  }
+
+  .labs-index a:first-child {
+    border-top: 0;
+  }
+
+  .lab-feature {
+    padding-block: 60px;
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .lab-feature-reverse .lab-copy,
+  .lab-feature-reverse .lab-visual {
+    grid-column: 1;
+    grid-row: auto;
   }
 
   .home-news,
